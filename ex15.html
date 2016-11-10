@@ -13,6 +13,14 @@
     in this script tag which comes before the
     buttons.
     */
+    window.addEventListener('load', function() {
+      var butt = document.querySelectorAll('button');
+      for(var i =0; i < 3; i++) {
+        butt[i].addEventListener('click', function(event){
+          event.target.textContent = "You clicked";
+        })
+      }
+    });
     </script>
   </head>
   <body>
